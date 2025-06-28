@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>Vicky Gupta - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top left, #fce4ec, #e3f2fd);
+      background-attachment: fixed;
+      background-size: cover;
+      color: #1a1a2e;
+    }
+
+    body::before, body::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      z-index: -1;
+      filter: blur(120px);
+      opacity: 0.4;
+      animation: float 15s ease-in-out infinite;
+    }
+
+    body::before {
+      top: -100px;
+      left: -100px;
+      background: #ff80ab;
+    }
+
+    body::after {
+      bottom: -100px;
+      right: -100px;
+      background: #82b1ff;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+    }
+
+    .portfolio {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #ffffffd1;
+      border-radius: 25px;
+      box-shadow: 8px 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .center {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    h1, h2, h3 {
+      color: #4a148c;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      background: linear-gradient(to right, #fff, #fce4ec);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: inset 1px 1px 5px #ddd;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: linear-gradient(145deg, #ffe0f0, #e0f7fa);
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 5px 5px 12px #cfcfcf, -5px -5px 12px #fff;
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.01);
+    }
+
+    img, video {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #5e35b1;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVE TEXT SIZE */
+    @media (max-width: 768px) {
+      h1 { font-size: 24px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 18px; }
+      p, li { font-size: 0.95rem; }
+    }
+
+    @media (max-width: 480px) {
+      .profile {
+        width: 100px;
+        height: 100px;
+      }
+      .portfolio {
+        margin: 10px;
+        padding: 15px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="portfolio">
+  <div class="center">
+    <img src="vicky00.jpg" alt="Vicky Gupta" class="profile" />
+    <h1>Vicky Gupta</h1>
+    <p>Professional Video & Graphic Editor</p>
+  </div>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>
+     🎬 Hi, I'm Vicky Gupta — Your Creative Editing Partner! I’m a passionate freelance video editor, logo designer, thumbnail creator, and visual storyteller with over 3 years of experience helping creators, influencers, and businesses bring their ideas to life. Whether you're looking for a sleek YouTube intro, eye-catching thumbnails, engaging short-form reels, or clean and professional brand logos, I deliver high-quality, deadline-driven work tailored to your vision.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Services</h2>
+    <ul>
+      <li>YouTube & Social Media Video Editing</li>
+      <li>Logo Design & Brand Identity</li>
+      <li>Thumbnail Creation</li>
+      <li>Motion Graphics & Transitions</li>
+      <li>Website Manager</li>
+       <li>Color Grading, Subtitles & Audio Sync</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Logo Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="logo2.jpg" alt="Logo 1">
+        <p>Modern 3D logo for a Gaming Channel.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.Js52J0179MJWaV45Ve4yzwHaHY?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Logo 2">
+        <p>Simple 2D logo for <a href="https://www.youtube.com/@SHIVANSHEDUCATIONHUB" target="_blank"> Educational </a> channel</p>
+      </div>
+      <div class="project-card">
+        <img src="logo3.jpg" alt="Logo 3">
+        <p>  2D logo with low budget.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Thumbnail Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="youtube_thumbnail_maxres.jpg" alt="Thumbnail 1">
+        <p>Thumbnail with vibrant colors.</p>
+      </div>
+      <div class="project-card">
+        <img src="thum1.avif" alt="Thumbnail 2">
+        <p>Project thumbnail for YouTube.</p>
+      </div>
+      <div class="project-card">
+        <img src="thum2.jpg" alt="Thumbnail 3">
+        <p>Travel vlog thumbnail .</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Video Editing Project</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <video controls>
+          <source src="edited-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Full vlog edit with transitions, color grading, and music sync.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Website Project</h2>
+      <div class="project-card">
+      
+        <p>Responsive website built with HTML/CSS.<br>
+        🔗 <a href="https://www.raviandcompany.com" target="_blank">Visit Website</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 Email: majhigama735@gmail.com<br>
+      📞 Phone: +91-9546905669<br>
+      📸 Instagram: <a href="https://www.instagram.com/editor_vickyofficial/" target="_blank">@Editor_vickyofficial</a>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
